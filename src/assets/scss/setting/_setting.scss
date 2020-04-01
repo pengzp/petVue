@@ -1,0 +1,54 @@
+.setting-container {
+  background: #fff;
+  .setting-header{
+    height: 50px;
+    line-height: 50px;
+    box-shadow: 2px 4px 20px -4px rgba(0, 0, 0, .1);
+    .header-logo {
+      float: left;
+      margin-left: 20px;
+      height: 50px;
+      img {
+        margin-top: 7px;
+        height: 36px;
+        width: 36px;
+      }
+    }
+    .header-title {
+      float: left;
+      margin-left: 15px;
+      font-size: 20px;
+      font-weight: 700;
+      color: #287dae;
+    }
+    .header-back{
+      float: left;
+      margin-left: 20px;
+      margin-top: 5px;
+      cursor: pointer;
+    }
+  }
+  .menu-container {
+    width: 230px;
+    float: left;
+    position: fixed;
+    box-shadow: 2px 4px 20px -4px rgba(0, 0, 0, .1);
+    border-right: none;
+    .ivu-menu-item{
+      border-right: none;
+      border-bottom: 1px solid rgba(248, 248, 249, 0.4);
+    }
+    .setting-title{
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      font-weight: 500;
+      border-right: 1px solid #e9eaec;
+      border-bottom: 1px dashed #e9eaec;
+    }
+  }
+  .content-container {
+    margin-left: 230px;
+
+  }
+}

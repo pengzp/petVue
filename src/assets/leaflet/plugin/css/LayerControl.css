@@ -1,0 +1,193 @@
+/*图层控制按钮*/
+
+.control-btn {
+  position: absolute;
+  right: 10px;
+  height: 32px;
+  width: 32px;
+  border-radius: 2px;
+  cursor: pointer;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, .19);
+  z-index: 9;
+  border-radius: 5px;
+  background: #788490
+}
+
+.control-btn>.layer-icon{
+  height: 18px;
+  width: 18px;
+  background-image: url("./img/layercontrol.png");
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+  -moz-background-size:100% 100%;
+  margin-top: 3px;
+  margin-left: 7px;
+}
+
+.control-btn>span{
+  color: #fff;
+  width: 32px;
+  text-align: center;
+  display: block;
+  font-size: 12px;
+  transform: scale(0.6);
+  margin-top: -5px;
+}
+
+
+
+/*图层控制区域样式表*/
+.layers-control-container {
+  position: absolute;
+  right: 10px;
+  z-index: 9999;
+  width: 240px;
+  height: 270px;
+  top:40px;
+  border-radius: 5px;
+  background-color: hsla(0, 0%, 100%, 1);
+  display: none;
+  cursor: pointer;
+}
+
+.layers-control-container.show{
+  display: block;
+}
+
+.control-label {
+  background: #788490;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 15px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.groups-container {
+  height: 240px;
+  overflow: auto;
+}
+
+.groups-container::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+.groups-container::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 5px rgba(131, 99, 245, 0.2);
+  background: #788490;
+}
+.groups-container::-webkit-scrollbar-track {/*滚动条里面轨道*/
+  -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+  border-radius: 0;
+  background: #f7f7f8;
+}
+
+.group-item {
+  margin-bottom: 2px;
+}
+
+.group-item.open>.layer-item{
+  display: block;
+}
+
+.group-item.close>.layer-item{
+  display: none;
+}
+
+.group-item.open>.group-title>i:before{
+  content: "\F107";
+}
+
+.group-item.close>.group-title>i:before{
+  content: "\F105";
+}
+
+.group-title {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 15px;
+  background: #f8f8f9;
+  font-weight: 400;
+}
+
+.group-title>i{
+  float: right;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 15px;
+  font-size: 18px;
+}
+
+.group-title>i:hover{
+  color: #788490;
+}
+
+.layer-item {
+  height: 40px;
+}
+
+.layer-name {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 25px;
+  font-weight: 400;
+}
+
+.layer-switch {
+  float: right;
+  padding-top: 6px;
+  margin-right: 10px;
+}
+
+.layer-switch-btn {
+  width: 40px;
+  display: inline-block;
+  height: 18px;
+  line-height: 16px;
+  border-radius: 18px;
+  vertical-align: middle;
+  border: 1px solid #ccc;
+  background-color: #ccc;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: all .2s ease-in-out;
+}
+
+.layer-switch-btn-checked {
+  border-color: #788490;
+  background-color: #788490;
+}
+
+.layer-switch-btn-inner {
+  color: #fff;
+  font-size: 12px;
+  position: absolute;
+  left: 25px;
+}
+
+.layer-switch-btn-checked .layer-switch-btn-inner {
+  left: 8px;
+}
+
+.layer-switch-btn:after {
+  content: '';
+  width: 14px;
+  height: 14px;
+  border-radius: 14px;
+  background-color: #fff;
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  transition: left .2s ease-in-out, width .2s ease-in-out;
+}
+
+.layer-switch-btn-checked:after {
+  left: 22px;
+}

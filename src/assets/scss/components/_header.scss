@@ -1,0 +1,271 @@
+.header-container {
+  height: 65px;
+  line-height: 65px;
+  font-family: "Microsoft YaHei", "微软雅黑";
+  width: 100%;
+  box-shadow: 2px 4px 20px -4px #0881bc;
+  background-image: linear-gradient(to right, #058ebb , #0da0b7);
+
+  cursor: pointer;
+  .header-logo {
+    float: left;
+    height: 65px;
+    img {
+      height: 65px;
+      width: auto;
+    }
+  }
+  .child-title{
+    float: left;
+    height: 65px;
+    .parting-line{
+      float: left;
+      width: 2px;
+      height: 21px;
+      margin-top: 22px;
+      margin-left: 10px;
+      margin-right: 10px;
+      background: #fff;
+    }
+    .child-title-detail{
+      float: left;
+      line-height: 65px;
+      font-size: 15px;
+      font-weight: 500;
+      color: #fff;
+      height: 100%;
+      width: 100px;
+    }
+  }
+  .header-title {
+    float: left;
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 65px;
+    color: rgb(255, 255, 255);
+    .desc{
+      height: 20px;
+      margin-top: -17px;
+      font-weight: normal;
+      font-size: 12px;
+      width:100%;
+      float:left
+    }
+  }
+  .navs-item {
+    float: right;
+    height: 65px;
+    width: auto;
+    .items {
+      float: left;
+      height: 65px;
+      width: auto;
+      .nav-item {
+        float: left;
+        width: 97px;
+        text-align: center;
+        height:65px;
+        line-height: 65px;
+        .item-cont{
+          float: left;
+          width: 97px;
+          text-align: center;
+          height:65px;
+          line-height: 65px;
+          .item-cont-img{
+            float: left;
+            width:100%;
+            height:26px;
+            line-height: 26px;
+            align-items: center;
+            margin-top:9px;
+            img{
+              width:26px;
+              height:100%
+            }
+          }
+          .item-cont-text{
+            font-size: 13px;
+            height:30px;
+            line-height: 30px;
+            width:100%;
+            float: left;
+            color:#e4f6ff
+          }
+        }
+      }
+      .nav-item.selected {
+        background: url(../static/images/header/nav-checked.png) ;
+        background-size: cover;
+        .item-cont-text{
+          color:#fff
+        }
+      }
+      .nav-item li {
+        cursor: pointer;
+        list-style: none;
+        width: auto;
+        line-height: 65px;
+        width: 87px;
+        height: 65px;
+        float: left;
+        color: #fff;
+        font-size: 14px;
+        font-family: 'Microsoft YaHei';
+        a {
+          color: rgb(242,252,255);
+          span {
+            font-size: 13px;
+          }
+        }
+
+      }
+    }
+    .nav-split {
+      width: 1px;
+      height:20px;
+      float: left;
+      margin-top: 20px;
+      background: rgba(255, 255, 255, 0.6)
+    }
+    .user-info {
+      float: left;
+      padding-left:10px;
+      height: 65px;
+      width: auto;
+      background: rgba(0,0,0,0.2);
+      .user-img {
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        float: left;
+        margin: 10px;
+        img {
+          height: 40px;
+          width: 40px;
+        }
+      }
+      .user-text {
+        cursor: pointer;
+        list-style: none;
+        width: auto;
+        line-height: 65px;
+        height: 65px;
+        float: left;
+        color: #b4e6ff;
+        font-size: 14px;
+        font-family: 'Microsoft YaHei';
+        a {
+          color: #b4e6ff;
+          font-size: 14px;
+          font-family: 'Microsoft YaHei';
+        }
+        .ivu-select-dropdown {
+          z-index: 9999;
+          a {
+            color: #000;
+            margin-left: 10px;
+          }
+        }
+      }
+      .exit {
+        width: 30px;
+        height: 65px;
+        line-height: 65px;
+        float: left;
+        margin-right: 5px;
+        cursor: pointer;
+        i {
+          font-size: 14px;
+          color: #b4e6ff;
+        }
+      }
+    }
+    .more-info{
+      float: left;
+      height: 65px;
+      width: 87px;
+      z-index: 1200;
+      // background: rgba(0,0,0,0.3);
+      text-align: center;
+      .icon{
+        float: left;
+        width: 100%;
+        height: 35px;
+        line-height: 26px;
+        padding-top: 9px;
+        i{
+          font-size: 20px;
+          color: #fff;
+        }
+      }
+      .text{
+        float: left;
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        .ivu-dropdown-rel{
+          a {
+              font-size: 14px;
+              color: #fff;
+              background: 0 0;
+              text-decoration: none;
+              outline: 0;
+              cursor: pointer;
+              transition: color .2s ease;
+          }
+          a:hover{
+            font-size: 14px;
+            font-weight: 500;
+            color: #60e4d5;
+            background: 0 0;
+            text-decoration: none;
+            outline: 0;
+            cursor: pointer;
+            transition: color .2s ease;
+          }
+        }
+        .ivu-select-dropdown {
+          width: inherit;
+          max-height: 200px;
+          overflow: auto;
+          margin: 5px 0;
+          padding: 5px 0;
+          background-color: #4293e6;
+          box-sizing: border-box;
+          border-radius: 4px;
+          box-shadow: 0 1px 6px rgba(0,0,0,.2);
+          position: absolute;
+          z-index: 99999;
+          .ivu-dropdown-item {
+            margin: 0;
+            line-height: normal;
+            padding: 7px 16px;
+            clear: both;
+            color: #fff;
+            font-size: 12px!important;
+            white-space: nowrap;
+            list-style: none;
+            cursor: pointer;
+            transition: background .2s ease-in-out;
+          }
+          .ivu-dropdown-item:hover {
+            margin: 0;
+            line-height: normal;
+            padding: 7px 16px;
+            clear: both;
+            color: #fff;
+            background: #2080e2;
+            font-size: 12px!important;
+            white-space: nowrap;
+            list-style: none;
+            cursor: pointer;
+            transition: background .2s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+
+}

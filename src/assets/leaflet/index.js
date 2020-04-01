@@ -1,0 +1,13 @@
+import L from 'leaflet';
+import Proj from 'proj4leaflet';
+import heat from './plugin/Heat';
+import LayerControl from './plugin/LayerControl';
+import ChinaProvider from './plugin/ChinaProvider';
+import TianDiTuLayerControl from './plugin/TianDiTuLayerControl';
+import RangeControl from './plugin/RangeControl';
+import OneMapRangeControl from './plugin/oneMapRangeControl';
+import hightLightMarker from './plugin/leaflet.marker.highlight';
+import LeafletPolylineSnakeAnim from './plugin/Leaflet.Polyline.SnakeAnim';
+// import fillPattern from './plugin/leaflet-polygon.fillPattern';
+import imageFillSymbol from './plugin/ImageFillSymbol';
+export default L;

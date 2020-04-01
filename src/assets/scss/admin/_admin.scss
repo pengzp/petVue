@@ -1,0 +1,142 @@
+.admin-page{
+  .admin-header{
+    background: #287dae;;
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+    box-shadow: 2px 4px 20px -4px rgba(0, 0, 0, .1);
+    .header-logo {
+      float: left;
+      margin-left: 20px;
+      height: 60px;
+      img {
+        margin-top: 7px;
+        height: 36px;
+        width: 36px;
+      }
+    }
+    .header-title {
+      float: left;
+      margin-left: 15px;
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+    }
+    .logout{
+      float: right;
+      margin-right: 40px;
+      height: 60px;
+      line-height: 60px;
+      cursor: pointer;
+      i{
+        font-size: 22px;
+        display: block;
+        margin-top: 20px;
+        color:#fff;
+      }
+    }
+  }
+  .admin-mock-user{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f8fa;
+  }
+  .admin-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f8fa;
+    ul{
+      li{
+        float: left;
+        list-style-type: none;
+        margin-right: 50px;
+        .router-item{
+          cursor: pointer;
+          width: 200px;
+          height: 220px;
+          .ivu-card{
+            height: 100%;
+            width: 100%;
+            .ivu-card-body{
+              padding: 0px;
+              .router-title{
+                padding-left: 10px;
+                height: 40px;
+                line-height: 40px;
+                border-top-left-radius: 4px;
+                border-top-right-radius: 4px;
+                background: #f8f8f9;
+                color: #2d8cf0;
+                font-weight: 700;
+              }
+              .router-image{
+                border-top-left-radius: 4px;
+                border-top-right-radius: 4px;
+                text-align: center;
+                height: 180px;
+                line-height: 180px;
+                background:#2d8cf0 ;
+                color: #fff;
+                i{
+                  font-size: 100px;
+                }
+              }
+              .router-footer{
+                height: 40px;
+                background: #e9eaec;
+                border-bottom-left-radius: 4px;
+                border-bottom-right-radius: 4px;
+                line-height: 40px;
+                text-align: center;
+                color: #ffffff;
+                font-size: 16px;
+                letter-spacing: 5px;
+                font-weight: 500;
+              }
+              .router-footer{
+                border-top: 1px solid rgba(248, 248, 249, 0.1);
+              }
+              .router-footer.sj{
+                background: #2b85e4;
+              }
+              .router-footer.qj{
+                background: #1c2438;
+              }
+              .router-footer.zj{
+                background: #19be6b;
+              }
+              .router-footer.sz{
+                background: #ff9900;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .admin-footer{
+    height: 40px;
+    border-top: 1px solid rgba(221, 222, 225, 0.5);
+    background: #f5f8fa;
+    line-height: 40px;
+    text-align: center;
+    img{
+      float: left;
+      margin-left: 20px;
+      display: block;
+      height: 20px;
+      margin-top: 10px;
+    }
+    a{
+      color: #287dae;
+      font-weight: 500;
+      letter-spacing: 2px;
+    }
+  }
+
+}

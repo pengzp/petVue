@@ -1,0 +1,49 @@
+.setting-dict-container{
+  .search-container {
+    overflow: hidden;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px dashed #e9eaec;
+    margin-left: 5px;
+    margin-right: 5px;
+    .search-button{
+      margin-top: 10px;
+      float: right;
+      margin-right: 10px;
+      height: 26px;
+      line-height: 26px;
+      button{
+        height: 26px;
+        line-height: 12px;
+      }
+    }
+    .search-item{
+      margin-top: 10px;
+      float: right;
+      height: 28px;
+      line-height: 28px;
+      margin-right: 10px;
+      .search-item-label{
+        line-height: 28px;
+        float: left;
+        font-weight: 400;
+      }
+      .search-item-condition{
+        float: left;
+        margin-left: 10px;
+        height: 28px;
+        .ivu-input-type{
+          height: 28px;
+          input{
+            height: 28px;
+          }
+        }
+      }
+
+    }
+  }
+  .dict-content-container{
+    width: 100%;
+    padding: 10px;
+  }
+}

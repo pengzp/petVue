@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>宠爱后台管理平台</title>
+    <link href="static/images/logo-ico.png" sizes="128x128" rel="icon">
+    <script src="static/config.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div class="lock-screen-back" id="lock_screen_back"></div>
+  </body>
+  <style type="text/css">
+    .leaflet-control-attribution.leaflet-control{
+      display: none;
+    }
+    .lock-screen-back{
+      border-radius: 50%;
+      z-index: -1;
+      box-shadow: 0 0 0 0 #2d7eac inset;
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      transition: all 3s;
+    }
+    
+  </style>
+</html>

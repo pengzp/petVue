@@ -1,0 +1,114 @@
+.tool-layer {
+  right: 10px;
+  top: 10px;
+}
+
+.tool-button {
+  position: absolute;
+  top: 0px;
+  right: 3px;
+  height: 38px;
+  width: 42px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #fff;
+  /*box-shadow: 0 2px 3px rgba(0, 0, 0, .19);*/
+  z-index: 9;
+  border-radius: 2px;
+}
+
+.tool-button i {
+  display: block;
+  width: 19px;
+  height: 17px;
+  margin: 10.5px auto 0;
+}
+.tool-layer-name{
+  float: right;
+  width: 30px;
+  height: 15px;
+  line-height: 15px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 42px;
+
+}
+
+.tool-layer-icon {
+  background: url(./img/lcbtn-blue.png);
+}
+
+.map-open-container {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  background: none;
+  display: none;
+}
+
+.map-open, .map-open-container {
+  width: 175px;
+  height: 80px;
+  padding: 5px;
+  z-index: 9999;
+}
+
+.map-open {
+  background-color: #fff;
+  background-color: hsla(0, 0%, 100%, 0.8);
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, .23);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, .23);
+  border-radius: 5px;
+}
+
+.map-sel {
+  margin: 5px 0 0 4px;
+}
+
+.map-yx {
+  width: 73px;
+  height: 58px;
+  background: url(./img/maptype.png);
+  background-position: 0 -120px;
+  display: inline-block;
+  margin: 2px 2px 2px 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.map-dt {
+  width: 73px;
+  height: 58px;
+  background: url(./img/maptype.png);
+  background-position: 0px 0px;
+  display: inline-block;
+  margin: 2px 2px 2px 2px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.map-dt.selected, .map-dt:hover {
+  border: 1px solid #3385FF;
+  background: url(./img/maptype.png) ;
+  background-position: 0px 0px;
+  border-radius: 3px;
+  text-align: left;
+}
+.map-dt.selected .tool-layer-name, .map-dt:hover .tool-layer-name{
+  background-color: #3385FF;
+}
+
+.map-yx.selected, .map-yx:hover {
+  border: 1px solid #3385FF;
+  background: url(./img/maptype.png);
+  background-position: 0 -120px;
+  border-radius: 3px;
+  text-align: left;
+}
+.map-yx.selected .tool-layer-name, .map-yx:hover .tool-layer-name{
+  background-color: #3385FF;
+}
+
+.map-open-show {
+  display: block;
+}
